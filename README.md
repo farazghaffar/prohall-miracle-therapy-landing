@@ -2,12 +2,14 @@
 
 Static A/B landing pages for [Prohall Miracle Therapy Kit](https://shop.prohall.ai/products/brazilian-keratin-hair-treatment-kit-straightening-blowout-formaldehyde-free-prohall-professional-miracle-therapy-17oz-keratina-queratina-alisador-para-el-pelo) on shop.prohall.ai, measured with Split.
 
-| Version | Path | Headline |
-|---|---|---|
-| A | `/miracle-therapy/v1/a/` | Meet Miracle Therapy — the 3-step Brazilian keratin kit |
-| B | `/miracle-therapy/v1/b/` | How to use Miracle Therapy for sleek, smooth hair at home |
+**Test: layout.** Both versions use the same headline ("Meet Miracle Therapy — the 3-step Brazilian keratin kit"), copy, photos, price and buttons; only the design differs.
 
-Both pages share `/miracle-therapy/v1/assets/styles.css`; only the `<title>` and `<h1>` differ.
+| Version | Path | Layout |
+|---|---|---|
+| A | `/miracle-therapy/v1/a/` | Classic: split hero, card grids, dark ingredients band |
+| B | `/miracle-therapy/v1/b/` | Editorial: centered arched hero, numbered lists, timeline, dark buy band |
+
+Both load `/miracle-therapy/v1/assets/styles.css` (brand tokens + layout A); B also loads `styles-b.css`.
 
 ## Live links (GitHub Pages)
 Settings → Pages → Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
